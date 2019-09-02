@@ -72,12 +72,18 @@
 </header>
 
 		<main class="main">
-			<section class="posts">
-	<article class="post_full"> 
+			<div class="tag-page-container">
+     <div class="tag-page-title">
+     	<i class="fa fa-tag fa-lg"></i><h2 class="tag_title">GNN</h2>
+     </div>
+     <div class="tag-page-cards">
+          
+             <section class="posts">
+                <article class="post_full post_except"> 
 		<h1 class="post-title">
-			<div class="post-title-link">
-				Tensorflow
-			</div>
+			<a class="post-title-link" href="/
+				2019/08/22/GNN/">Graph Neural Network
+			</a>
 		</h1>
 		
 		<div class="post-info">
@@ -86,61 +92,82 @@
 			</div>
 			
 					<span class="post-words">
-						<i class="fa fa-pencil-square-o"></i>&nbsp131&nbspwords&nbsp&nbsp
+						<i class="fa fa-pencil-square-o"></i>&nbsp144&nbspwords&nbsp&nbsp
 					</span>
 					<span class="post-time">
 						<i class="fa fa-clock-o"></i>&nbsp1 mins&nbsp&nbsp&nbsp
 					</span>
 			
-			<div class="post-tags">
-				
-    
-        <i class="fa fa-tags"></i>  <a href="/tags/Tensorflow/"> Tensorflow</a>
-    
-			</div>
-		</div>
-		<div class="post-content">
-			<h1 id="Starting-to-TensorFlow"><a href="#Starting-to-TensorFlow" class="headerlink" title="Starting to TensorFlow"></a>Starting to TensorFlow</h1><h2 id="Introduction"><a href="#Introduction" class="headerlink" title="Introduction"></a>Introduction</h2><p>As the outstanding performance of <em>AlphaGo</em>, AI, Deep Learning, Machine Learning, such these words become more and more popular. Firstly, I am going to introduce the relationship between AI, deep learning and machine learning.</p>
-<a id="more"></a>
-
-<p><strong>AI</strong> (<strong>Artificial Intelligence</strong>) is proposed in 1956. Scientists dream of creating a robot that can think like human-beings. Artificial Intelligence contains many fields: expert system, machine learning, computer vision, etc..</p>
-<p><img src="AI_structure.jpg" alt="AI"></p>
-<p><strong>Machine Learning</strong> is an approach to AI. The basic concept is ultilizing algorithms to extract and learn information form data and then generalize models that work well to real-world issues.</p>
-<p><strong>Deep Learning</strong> is a deep neural network with mutiple hidden layers based on supervised learning and unsupervised learning methods. Deep learning is a method to do machine learning.</p>
-<h2 id="Installation"><a href="#Installation" class="headerlink" title="Installation"></a>Installation</h2><pre class=" language-bash"><code class="language-bash">    pip <span class="token function">install</span> tensorflow</code></pre>
-<p>(unfinished)</p>
-
-		</div>
-		<div class="post-nav">
-			<div class="post-nav-prev">
-				
-					<a href="/2019/08/22/GNN/" rel="prev" title="Graph Neural Network">
-						<i class="fa fa-angle-double-left"></i>&nbspGraph Neural Network
-					</a>
-					
-			</div>
-			<div class="post-nav-next">
-		      	  	
-		    </div>
-		    <div class="clear"></div>
 		</div>		
+		<div class="post-content">
+			<h1 id="Introduction"><a href="#Introduction" class="headerlink" title="Introduction"></a>Introduction</h1><p>In several areas of science and engineering, many underlying relationships among data can be represented in terms of graphs.<br>For example, molecular chemistry, molecular biology,</p>
+<center>
+
+<pre class=" language-mermaid"><code class="language-mermaid">graph LR
+    A( Graph Neural Network ) --> B(Acyclic Graph)
+        A --> C(Cyclic Graph)
+        A --> D(Undirected Graph)
+        A --> E(Directed Graph)</code></pre>
+</center>
+
+<p><strong>Graph Neural Network (GNN)</strong>, an extended model from recursive neural network (RNN) and Markov chain, is presented.</p>
+<h1 id="Notation"><a href="#Notation" class="headerlink" title="Notation"></a>Notation</h1><table>
+<thead>
+<tr>
+<th>Notations</th>
+<th>Descriptions</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>$R^{m}$</td>
+<td>m-dimentional Euclidean space</td>
+</tr>
+<tr>
+<td>$\tau(G,n)$</td>
+<td>a function $\tau$ maps a graph $G$ and a node $n$ into an Euclidean space</td>
+</tr>
+<tr>
+<td>$G = (N,E)$</td>
+<td>a graph G is made of nodes $N$ and edges $E$</td>
+</tr>
+<tr>
+<td>$N$</td>
+<td>a set of nodes</td>
+</tr>
+<tr>
+<td>$E$</td>
+<td>a set of edges</td>
+</tr>
+<tr>
+<td>$E$</td>
+<td>a set of edges</td>
+</tr>
+<tr>
+<td>$E$</td>
+<td>a set of edges</td>
+</tr>
+</tbody></table>
+<p>$$<br>\begin{matrix} h_v=f(x_v,x_{co[v]},h_{ne[v]},x_{ne[v]})\ o_v=g(h_v,x_v)\ \end{matrix}$$</p>
+
+		</div>
+		<div class="sub-container">
+			<span class="post-tags">				
+				
+    
+        <i class="fa fa-tags"></i>  <a href="/tags/GNN/"> GNN</a>
+    
+			</span>
+			
+		</div>
 </article>
 
-	<div class="post-toc">
-		<div class="toc-top">
-			<i class="fa fa-th-large"></i>Article Catalog
-		</div>
-		<ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Starting-to-TensorFlow"><span class="toc-text">Starting to TensorFlow</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#Introduction"><span class="toc-text">Introduction</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Installation"><span class="toc-text">Installation</span></a></li></ol></li></ol>
-	</div>
+             </section>	
+          
+     </div>
+</div>
 
 
 
-
-
-
-
-
-</section>	
 
 		</main>
 		<footer class="footer">
@@ -162,14 +189,6 @@
 <script src="/js/jquery.fancyboxStart.js"></script>
 <script src="/js/search.js"></script>
 
-	
-		<script src="/js/toc.js"></script>
-		<script src="/js/jquery.toTop.js"></script>
-	
-
-
-	<script src="https://unpkg.com/vanilla-back-to-top@7.2.0/dist/vanilla-back-to-top.min.js"></script>
-	<script src="/js/IndexToTop.js"></script>
 
 
 	<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid="></script>
