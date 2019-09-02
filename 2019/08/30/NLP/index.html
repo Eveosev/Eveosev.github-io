@@ -86,10 +86,10 @@
 			</div>
 			
 					<span class="post-words">
-						<i class="fa fa-pencil-square-o"></i>&nbsp520&nbspwords&nbsp&nbsp
+						<i class="fa fa-pencil-square-o"></i>&nbsp818&nbspwords&nbsp&nbsp
 					</span>
 					<span class="post-time">
-						<i class="fa fa-clock-o"></i>&nbsp3 mins&nbsp&nbsp&nbsp
+						<i class="fa fa-clock-o"></i>&nbsp4 mins&nbsp&nbsp&nbsp
 					</span>
 			
 			<div class="post-tags">
@@ -138,7 +138,7 @@
 </ol>
 <p><strong>Significance of a corpus</strong>:</p>
 <p>In any NLP application, corpus is the most critical and basic building block. It provides us with quantitative data that is used to build NLP applications.</p>
-<p><strong>Challenges regarding creating a corpus for NLP</strong></p>
+<p><strong>Challenges regarding creating a corpus for NLP</strong>:</p>
 <ol>
 <li>Selecting the needed type of data regarding solving the problem statement.</li>
 <li>Availability of data</li>
@@ -179,6 +179,103 @@
 
 </li></ol>
 
+<h1 id="NLTK"><a href="#NLTK" class="headerlink" title="NLTK"></a>NLTK</h1><h2 id="Installation"><a href="#Installation" class="headerlink" title="Installation"></a>Installation</h2><p>During this book, the module I used is <strong>nltk</strong>. To install this module, you can do it as following:</p>
+<ol>
+<li>Open the terminal.</li>
+<li>Type</li>
+<li>Execute the python command.</li>
+<li>Import nltk command.</li>
+<li>Execute the <strong>nltk.download()</strong> command.</li>
+<li>Download all packages.</li>
+</ol>
+<pre class=" language-bash"><code class="language-bash">pip <span class="token function">install</span> nltk
+<span class="token function">import</span> nltk
+nltk.download<span class="token punctuation">(</span><span class="token punctuation">)</span></code></pre>
+<h2 id="Built-in-corpora"><a href="#Built-in-corpora" class="headerlink" title="Built-in corpora"></a>Built-in corpora</h2><p><strong>nltk</strong> has four types of corpora:</p>
+<ul>
+<li><strong>Isolate corpus</strong>: a collection of text or natural language.</li>
+<li><strong>Categorized corpus</strong>: a collection of texts that are grouped into different types of categories.</li>
+<li><strong>Overlapping corpus</strong>: a collection of texts that are categorized but the categories overlap with each other.</li>
+<li><strong>Temporal corpus</strong>: a collection of the usages of natural language over a period of time.</li>
+</ul>
+<p><strong>nltk</strong> contains some built-in dataset:</p>
+<table>
+<thead>
+<tr>
+<th>Corpus</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>gutenberg</td>
+<td>Isolate</td>
+<td></td>
+</tr>
+<tr>
+<td>webtext</td>
+<td>Isolate</td>
+<td>A collection of diverse, contemporary text genres, collected by scraping publicly accessible archives of web postings</td>
+</tr>
+<tr>
+<td>brown</td>
+<td>Categorized</td>
+<td>A Standard Corpus of Present-Day Edited American English, for use with Digital Computers</td>
+</tr>
+<tr>
+<td>reuters</td>
+<td>Overlapping</td>
+<td>contains categorized data but the define categories overlap with each other. Ex: coconuts, coconut-oil, cotton oil.</td>
+</tr>
+<tr>
+<td>inaugural</td>
+<td>Temporal</td>
+<td></td>
+</tr>
+</tbody></table>
+<p>To insert the above corpus, we use python command:</p>
+<pre class=" language-bash"><code class="language-bash">from nltk.corpus <span class="token function">import</span> <span class="token string">'corpus name'</span></code></pre>
+<h2 id="API-Attributes-of-a-corpus"><a href="#API-Attributes-of-a-corpus" class="headerlink" title="API Attributes of a corpus"></a>API Attributes of a corpus</h2><table>
+<thead>
+<tr>
+<th>API Attributes</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>fileids([categories])</td>
+<td>If [categories] = None, return all files of corpus; otherwise, return the results in files of the corpus corresponding to there categories.</td>
+</tr>
+<tr>
+<td>categories([fileids])</td>
+<td>If [fileids] = None, return the all categories of the corpus; otherwise, return categories of the corpus corresponding to these files.</td>
+</tr>
+<tr>
+<td>raw()</td>
+<td>return the raw content of the corpus</td>
+</tr>
+<tr>
+<td>raw(fileids=[f1, f2])</td>
+<td>return the raw content of specified files</td>
+</tr>
+<tr>
+<td>raw(categories=[c1, c2])</td>
+<td>return the raw content of specified categories</td>
+</tr>
+<tr>
+<td>words()</td>
+<td>return the words of the corpus</td>
+</tr>
+<tr>
+<td>words(fileids=[f1, f2])</td>
+<td>return the words of specified files</td>
+</tr>
+<tr>
+<td>words(categories=[c1, c2])</td>
+<td>return the words of specified categories</td>
+</tr>
+</tbody></table>
+
 		</div>
 		<div class="post-nav">
 			<div class="post-nav-prev">
@@ -199,7 +296,7 @@
 		<div class="toc-top">
 			<i class="fa fa-th-large"></i>Article Catalog
 		</div>
-		<ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Abstract"><span class="toc-text">Abstract</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Concepts"><span class="toc-text">Concepts</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Example"><span class="toc-text">Example</span></a></li></ol>
+		<ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Abstract"><span class="toc-text">Abstract</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Concepts"><span class="toc-text">Concepts</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Example"><span class="toc-text">Example</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#NLTK"><span class="toc-text">NLTK</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#Installation"><span class="toc-text">Installation</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Built-in-corpora"><span class="toc-text">Built-in corpora</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#API-Attributes-of-a-corpus"><span class="toc-text">API Attributes of a corpus</span></a></li></ol></li></ol>
 	</div>
 
 
